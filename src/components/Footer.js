@@ -10,7 +10,7 @@ const Foot = styled.div`
 function Footer() {
     return (
         <Foot>
-            <p>Made with ♥</p>
+            <p>Made with <a href="https://github.com/raulsposito/pricimetric">♥</a></p>
         </Foot>
     )
 }

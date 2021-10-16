@@ -1,6 +1,6 @@
 # This is a Test Project.
 
-Check out the [Deployed Version]()
+Check out the [Deployed Version](https://pricimetric-piechart-test.netlify.app/)
 
 # Getting Started with Create React App
 
