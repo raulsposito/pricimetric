@@ -30,8 +30,8 @@ function App() {
       <header className="App-header">
         <h1 style={{color: '#003E49', 'margin-bottom': '6rem'}}>Pricing Maturity Chart</h1>
         <Wrapper>
-          <PieChartDemo />
           <Row>
+          <PieChartDemo />
             <Column>
               <Card percentage="23" time="2 years or more" color="#2791A2" />
               <Card percentage="23" time="1 year" color="#003E49" />

@@ -13,9 +13,10 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   margin-top: -22px;
+  color: #003E49;
 }
 
 code {

@@ -19,7 +19,8 @@ const PieChartDemo = () => {
                     "#f2b698",
                     "#f48a11",
                     "#ea6f35"
-                ]
+                ],
+                radius: 120,
             }
         ]
     };

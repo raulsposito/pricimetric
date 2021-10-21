@@ -14,10 +14,9 @@ const MyCard = styled.div`
     color: ${({ color }) => getColor(color)};
     transition: all .2s ease-in-out;
 
-    &:hover {
+    /* &:hover {
         transform: scale(1.16);
-        /* box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.15); */
-    }
+    } */
 `
 
 const Card = ({ percentage, time, color }) => (
