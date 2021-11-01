@@ -1,0 +1,79 @@
+.collapse-wrapper {
+	margin-bottom: 18px;
+	padding: 14px 19px;
+	position: relative;
+	transition: all 300ms ease;
+
+	.collapse-header {
+		font-size: 0.938rem;
+		margin-right: 30px;
+		transition: all 300ms ease;
+		border-bottom: 1px solid transparent;
+	}
+
+	.collapse-button {
+		top: 11px;
+		right: 9px;
+		width: 23px;
+		height: 23px;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		transition: all 300ms ease;
+		cursor: pointer;
+
+		img {
+			transform: translate(0px, 1px);
+		}
+	}
+
+	.collapse-body {
+		display: none;
+	}
+
+	&.active {
+		box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.1);
+
+		.collapse-body {
+			display: block;
+			padding-bottom: 15px;
+
+			.p-chart {
+				margin: 0 0 -25px -10px;
+			}
+		}
+
+		.collapse-button {
+			transform: rotate(180deg);
+		}
+
+		.collapse-header {
+			border-color: $primary;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+	}
+	/* Color */
+	&.collapse-fiveth {
+		background-color: $fourth;
+
+		&.active {
+			background-color: $white;
+		}
+
+		.collapse-header {
+			color: $primary;
+		}
+
+		.collapse-button {
+			background-color: $fiveth;
+		}
+	}
+
+	&.collapse-rounded-md {
+		border-radius: 15px;
+	}
+}

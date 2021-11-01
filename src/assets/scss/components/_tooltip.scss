@@ -1,0 +1,66 @@
+﻿.p-tooltip {
+	position: absolute;
+	padding: .25em .5rem;
+	max-width: 12.5rem;
+	font-size: 0.75em;
+	background-color: $white;
+	color: $primary;
+	border-radius: 5px;
+	border: 1px solid $primary;
+	box-shadow: rgba(0, 0, 0, 0.133) 0px 6.4px 14.4px 0px, rgba(0, 0, 0, 0.11) 0px 1.2px 3.6px 0px;
+}
+
+.p-tooltip.p-tooltip-right,
+.p-tooltip.p-tooltip-left {
+	padding: 0 .25rem;
+}
+
+.p-tooltip.p-tooltip-top,
+.p-tooltip.p-tooltip-bottom {
+	padding: .25em 0;
+}
+
+.p-tooltip .p-tooltip-text {
+	white-space: pre-line;
+	padding: 0.5rem;
+}
+
+.p-tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.p-tooltip-right .p-tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -.25rem;
+	border-width: .25em .25em .25em 0;
+}
+
+.p-tooltip-left .p-tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -.25rem;
+	border-width: .25em 0 .25em .25rem;
+}
+
+.p-tooltip.p-tooltip-top {
+	padding: .25em 0;
+}
+
+.p-tooltip-top .p-tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -.25rem;
+	border-width: .25em .25em 0;
+}
+
+.p-tooltip-bottom .p-tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -.25rem;
+	border-width: 0 .25em .25rem;
+}

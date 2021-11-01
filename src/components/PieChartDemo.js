@@ -36,7 +36,7 @@ const PieChartDemo = () => {
     };
 
     return (
-        <div style={{ 'padding-right': '10px' }} className="card p-d-flex p-jc-center">
+        <div style={{ 'paddingRight': '10px' }} className="card p-d-flex p-jc-center">
             <Chart type="pie" data={chartData} options={lightOptions} style={{ position: 'relative', width: '100%', }} />
         </div>
     )

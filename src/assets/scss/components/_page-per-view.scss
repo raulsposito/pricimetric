@@ -1,0 +1,32 @@
+.p-page-per-view {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .p-page-per-view-items {
+        margin-left: 10px;
+        display: flex;
+        gap: 10px;
+
+        button {
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none 0px;
+            background: $fiveth;
+            border-radius: 50px;
+            color: $white;
+            transition: all 300ms ease;
+            font-size: 0.75rem;
+
+            &:not(.p-highlight) {
+                &:hover, &.isActive {
+                    background-color: $sixth;
+                }
+            }
+        }
+    }
+}

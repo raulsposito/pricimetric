@@ -1,0 +1,147 @@
+/* GENERAL */
+body {
+  background-color: $bg-body;
+  font-family: 'Lato', sans-serif;
+}
+.hidden {
+  display: none;
+}
+
+/* TITLES */
+h1 {
+  font-size: 3.375rem;
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.text {
+  /* TEXT COLOR */
+  &-primary {
+	color: $primary;
+  }
+  &-secondary {
+	color: $secondary;
+  }
+  &-tertiary {
+	color: $tertiary;
+  }
+  &-fourth {
+	color: $fourth;
+  }
+  &-fiveth {
+	color: $fiveth;
+  }
+  &-sixth {
+	color: $sixth;
+  }
+  &-seventh {
+	color: $seventh;
+  }
+  &-white {
+	color: $white;
+  }
+  
+  /* TEXT SIZE */
+  // BASE IS 16PX = 1REM
+  &-xl {
+	font-size: 1.5rem;
+  }
+  &-lg {
+	font-size: 1.25rem;
+  }
+  &-md {
+	font-size: 0.938rem;
+  }
+  &-sm {
+	font-size: 0.813rem;
+  }
+  /* TEXT DECORATION */
+  &-underline {
+	text-decoration: underline;
+  }
+}
+
+/* line color */
+.hr {
+  border-bottom: 0px;
+  &-primary {
+	border-color: $primary;
+  }
+  &-gray {
+	border-color: $gray;
+  }
+}
+
+/* BG Color */
+.bg {
+	&-primary {
+		background-color: $primary;
+	}
+
+	&-secondary {
+		background-color: $secondary;
+	}
+
+	&-tertiary {
+		background-color: $tertiary;
+	}
+
+	&-fourth {
+		background-color: $fourth;
+	}
+
+	&-fiveth {
+		background-color: $fiveth;
+	}
+
+	&-sixth {
+		background-color: $sixth;
+	}
+
+	&-seventh {
+		background-color: $seventh;
+	}
+
+	&-gray {
+		background-color: $gray;
+	}
+
+	&-white {
+		background-color: $white;
+	}
+}
+
+.rotate {
+  &-180 {
+	transform: rotate(180deg);
+  }
+}
+
+.p-general-loading-overlay {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	backdrop-filter: blur(2px);
+}
+
+.pi-equal {
+	font-size: 18px;
+	padding-bottom: 4px;
+	font-weight: bold;
+
+	&:before {
+		content: '=';
+	}
+}

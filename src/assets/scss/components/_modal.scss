@@ -1,0 +1,22 @@
+.modal {
+  &-table {
+    border-radius: 15px;
+    position: absolute;
+    top: 75%;
+    background-color: $white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  &-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    @extend .btn-none;
+  }
+  &-xs {
+    max-width: 265px;
+  }
+}

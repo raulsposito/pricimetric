@@ -1,0 +1,49 @@
+﻿// Font Awesome
+@import './variables';
+@import './overrides';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+// General Styles
+@import './reset';
+@import './general';
+@import './layouts';
+
+// Components
+@import './components/header';
+@import './components/btn';
+@import './components/form';
+@import './components/collapse';
+@import './components/table';
+@import './components/paginator';
+@import './components/page-per-view';
+@import './components/progress';
+@import './components/overlay';
+@import './components/multiselect';
+@import './components/modal';
+@import './components/menu';
+@import './components/primereactCommon';
+@import './components/dropdown';
+@import './components/fileupload';
+@import './components/toast';
+@import './components/inputnumber';
+@import './components/toggleButton';
+@import './components/chips';
+@import './components/dialog';
+@import './components/confirmDialog';
+@import './components/scrollPanel';
+@import './components/tooltip';
+// @import './components/datepicker';
+@import './components/calendar';
+@import './components/radiobutton';
+@import '~primeicons/primeicons.css';
+@import '~primereact/calendar/calendar.min.css';
+
+// Primeflex UI.
+@import '~primeflex/src/_variables.scss';
+@import '~primeflex/src/_grid.scss';
+@import '~primeflex/src/_formlayout.scss';
+@import '~primeflex/src/_display.scss';
+@import '~primeflex/src/_text.scss';
+@import '~primeflex/src/flexbox/_flexbox.scss';
+@import '~primeflex/src/_spacing.scss';
+@import '~primeflex/src/_elevation.scss';

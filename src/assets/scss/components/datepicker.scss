@@ -1,0 +1,293 @@
+﻿.p-datepicker {
+	padding: 0.857rem;
+	background: #ffffff;
+	color: #333333;
+	border: 1px solid #a6a6a6;
+	border-radius: 3px;
+
+	&:not(.p-datepicker-inline) {
+		background: #ffffff;
+		border: 1px solid #c8c8c8;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+		.p-datepicker-header {
+			background: #ffffff;
+		}
+	}
+
+	.p-datepicker-header {
+		padding: 0.5rem;
+		color: #333333;
+		background: #ffffff;
+		font-weight: 700;
+		margin: 0;
+		border-bottom: 0 none;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+
+		.p-datepicker-prev {
+			width: 2rem;
+			height: 2rem;
+			color: #a6a6a6;
+			border: 0 none;
+			background: transparent;
+			border-radius: 50%;
+			transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+			&:enabled {
+				&:hover {
+					color: #007ad9;
+					border-color: transparent;
+					background: transparent;
+				}
+			}
+
+			&:focus {
+				outline: 0 none;
+				outline-offset: 0;
+				box-shadow: 0 0 0 0.2rem #8dcdff;
+			}
+		}
+
+		.p-datepicker-next {
+			width: 2rem;
+			height: 2rem;
+			color: #a6a6a6;
+			border: 0 none;
+			background: transparent;
+			border-radius: 50%;
+			transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+			&:enabled {
+				&:hover {
+					color: #007ad9;
+					border-color: transparent;
+					background: transparent;
+				}
+			}
+
+			&:focus {
+				outline: 0 none;
+				outline-offset: 0;
+				box-shadow: 0 0 0 0.2rem #8dcdff;
+			}
+		}
+
+		.p-datepicker-title {
+			line-height: 2rem;
+
+			select {
+				transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+				&:focus {
+					outline: 0 none;
+					outline-offset: 0;
+					box-shadow: 0 0 0 0.2rem #8dcdff;
+					border-color: #007ad9;
+				}
+			}
+
+			.p-datepicker-month {
+				margin-right: 0.5rem;
+			}
+		}
+	}
+
+	table {
+		font-size: 1rem;
+		margin: 0.857rem 0;
+
+		th {
+			padding: 0.5rem;
+
+			> span {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		td {
+			padding: 0.5rem;
+
+			> span {
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 3px;
+				transition: background-color 0.2s, box-shadow 0.2s;
+				border: 1px solid transparent;
+
+				&:focus {
+					outline: 0 none;
+					outline-offset: 0;
+					box-shadow: 0 0 0 0.2rem #8dcdff;
+				}
+			}
+
+			> span.p-highlight {
+				color: #ffffff;
+				background: #007ad9;
+			}
+		}
+
+		td.p-datepicker-today {
+			> span {
+				background: #d0d0d0;
+				color: #333333;
+				border-color: transparent;
+			}
+
+			> span.p-highlight {
+				color: #ffffff;
+				background: #007ad9;
+			}
+		}
+	}
+
+	.p-datepicker-buttonbar {
+		padding: 0.857rem 0 0.429rem 0;
+		border-top: 1px solid #d8dae2;
+
+		.p-button {
+			width: auto;
+		}
+	}
+
+	.p-timepicker {
+		border-top: 1px solid #d8dae2;
+		padding: 0.857rem 0 0.429rem 0;
+
+		button {
+			width: 2rem;
+			height: 2rem;
+			color: #a6a6a6;
+			border: 0 none;
+			background: transparent;
+			border-radius: 50%;
+			transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+			&:enabled {
+				&:hover {
+					color: #007ad9;
+					border-color: transparent;
+					background: transparent;
+				}
+			}
+
+			&:focus {
+				outline: 0 none;
+				outline-offset: 0;
+				box-shadow: 0 0 0 0.2rem #8dcdff;
+			}
+
+			&:last-child {
+				margin-top: 0.2em;
+			}
+		}
+
+		span {
+			font-size: 1.286rem;
+		}
+
+		> div {
+			padding: 0 0.429rem;
+		}
+	}
+
+	.p-monthpicker {
+		margin: 0.857rem 0;
+
+		.p-monthpicker-month {
+			padding: 0.5rem;
+			transition: background-color 0.2s, box-shadow 0.2s;
+			border-radius: 3px;
+		}
+
+		.p-monthpicker-month.p-highlight {
+			color: #ffffff;
+			background: #007ad9;
+		}
+	}
+
+	&:not(.p-disabled) {
+		table {
+			td {
+				span {
+					&:not(.p-highlight) {
+						&:not(.p-disabled) {
+							&:hover {
+								background: #eaeaea;
+							}
+
+							&:focus {
+								outline: 0 none;
+								outline-offset: 0;
+								box-shadow: 0 0 0 0.2rem #8dcdff;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.p-monthpicker {
+			.p-monthpicker-month {
+				&:not(.p-highlight) {
+					&:not(.p-disabled) {
+						&:hover {
+							background: #eaeaea;
+						}
+
+						&:focus {
+							outline: 0 none;
+							outline-offset: 0;
+							box-shadow: 0 0 0 0.2rem #8dcdff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.p-datepicker.p-datepicker-timeonly {
+	.p-timepicker {
+		border-top: 0 none;
+	}
+}
+
+.p-datepicker.p-datepicker-multiple-month {
+	.p-datepicker-group {
+		border-right: 1px solid #d8dae2;
+		padding-right: 0.857rem;
+		padding-left: 0.857rem;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+			border-right: 0 none;
+		}
+	}
+}
+
+.p-datepicker-mask.p-component-overlay {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 769px) {
+	.p-datepicker {
+		table {
+			th {
+				padding: 0.25rem;
+			}
+
+			td {
+				padding: 0.25rem;
+			}
+		}
+	}
+}

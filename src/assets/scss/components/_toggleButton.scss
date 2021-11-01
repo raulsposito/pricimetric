@@ -1,0 +1,70 @@
+﻿
+.p-togglebutton {
+	&.p-button {
+		font-family: 'Lato', sans-serif;
+		cursor: pointer;
+		text-decoration: none;
+		line-height: inherit;
+		background-color: $fourth;
+		color: $primary;
+		font-weight: 600;
+		font-size: 1rem;
+		border-radius: 50px;
+		padding: 7px 15px;
+		top: 7px;
+	}
+
+	.p-button-icon {
+		margin-right: 5px;
+	}
+}
+
+.p-togglebutton.p-button .p-button-icon-left,
+.p-togglebutton.p-button .p-button-icon-right {
+	color: #6c757d;
+
+	&.pi-times {
+		color: $seventh;
+	}
+}
+
+.p-togglebutton.p-button:not(.p-disabled):not(.p-highlight) {
+	background-color: #ced4da;
+}
+
+.p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover {
+	background-color: $sixth;
+	color: $white;
+	border-color: #ced4da;
+}
+
+.p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover .p-button-icon-left,
+.p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover .p-button-icon-right {
+	color: $white;
+}
+
+.p-togglebutton.p-button.p-highlight {
+	background: $fourth;
+	border-color: $fourth;
+	color: $primary;
+}
+
+.p-togglebutton.p-button.p-highlight .p-button-icon-left,
+.p-togglebutton.p-button.p-highlight .p-button-icon-right {
+	color: $primary;
+}
+
+.p-togglebutton.p-button.p-highlight:hover {
+	background: $sixth;
+	border-color: $sixth;
+	color: $white;
+}
+
+.p-togglebutton.p-button.p-highlight:hover .p-button-icon-left,
+.p-togglebutton.p-button.p-highlight:hover .p-button-icon-right {
+	color: $white;
+}
+
+.p-togglebutton.p-button.p-invalid > .p-button {
+	border-color: #f44336;
+}

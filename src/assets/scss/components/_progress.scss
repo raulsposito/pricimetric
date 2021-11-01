@@ -1,0 +1,50 @@
+.p-progressbar {
+	height: 12px;
+	background-color: $progressBg;
+	display: flex;
+
+	&.p-progressbar-nobackground {
+		background-color: transparent !important;
+	}
+
+	&.p-higher-progressbar {
+		height: 20px;
+	}
+
+	&.p-progressbar-secondary {
+		.p-progressbar-value {
+			background-color: $sixth;
+		}
+	}
+
+	&.p-progressbar-height {
+		.p-progressbar-value {
+			height: calc(100% + 20px);
+			margin: -10px 0;
+		}
+	}
+
+	.p-progressbar-value {
+		background-color: $primary;
+	}
+
+	&.low {
+		.p-progressbar-value {
+			background-color: #d04d2f;
+		}
+
+		.p-progressbar-label {
+			color: #d04d2f;
+		}
+	}
+
+	.p-progressbar-label {
+		color: $primary;
+		padding: 0px 10px;
+		font-size: 0.75rem;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
